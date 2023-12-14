@@ -1,0 +1,47 @@
+/*HEADER NAVBAR*/
+#firstNavbar{
+  border-radius:0 0 20px 20px;
+  background-color: rgba(255, 255, 255, 0.8) !important;
+}
+/*2. Header değişiklikleri*/
+a.logo{
+  font-size: 2rem !important;
+  font-weight: 400;
+  font-family: 'Great Vibes', cursive;
+  color: hsla(36, 61%, 58%)
+}
+#secondNavbar{
+  color: transparent;
+}
+
+.customUl {
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.customUl li {
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+
+.customUl li a {
+  color: rgba(255, 255, 255, 0.75);
+  display: inline-block;
+  transition: color 0.8s ease;
+  position: relative;
+}
+.customUl li a:hover {
+  display: inline-block;
+  color: white; 
+  border-bottom: 2px solid orange; 
+  margin-top: -2px;
+  
+}
+
+
+.headerContainer{
+  display: flex;
+  flex-direction: column; /* Elemanları alt alta sırala */
+
+}

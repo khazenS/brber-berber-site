@@ -1,0 +1,64 @@
+#footer{
+  margin-top: 8rem;
+  background-image: url(../helper/img/footer_bg.png);
+  height: 25rem;
+  color: rgb(255, 255, 255, 0.8);
+  border-radius: 10px;
+  flex-direction: column;
+}
+
+.callLink{
+  color: white;
+  font-weight: 500;
+  transition: color 0.5s ease;
+}
+.callLink:hover{
+  color: darkgreen;
+}
+
+#footerSection1{
+  border-bottom: 2px  rgb(255, 255, 255 , 0.7) solid;
+}
+
+.list-group-item{
+  background-color: transparent;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  transition: border-radius 1s ease;
+}
+
+.list-group-item a{
+  color: rgb(255, 196, 0);
+  text-decoration: none;
+  transition: color 0.4s ease;
+}
+.list-group-item a:hover{
+  color: rgba(255, 196, 0,0.7);
+}
+.list-group-item:hover{
+  /* outline: 1px solid rgb(255, 255, 255, 0.5); */
+  border-radius: 35px;
+  
+}
+
+
+#bölüm3li1:hover{
+  color: rgba(255, 0, 157, 0.8);
+}
+#bölüm3li1 a:hover{
+ color: rgba(255, 0, 157, 0.8) !important;
+}
+
+#bölüm3li2:hover{
+  color: rgba(0, 60, 255, 0.8);
+}
+#bölüm3li2 a:hover{
+ color: rgba(0, 60, 255, 0.8) !important;
+}
+#bölüm3li3:hover{
+  color: rgba(255, 51, 0,0.8);
+}
+#bölüm3li3 a:hover{
+ color: rgba(255, 51, 0,0.8) !important;
+}
