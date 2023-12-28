@@ -103,16 +103,20 @@
           <!-- Modal body -->
           <div class="modal-body">
             <label for="name">İsim:</label>
-            <input type="text" class="form-control" id="name" placeholder="İsminizi giriniz">
+            <input type="text" class="form-control" id="name" placeholder="İsminizi giriniz" maxLength="20">
 
             <label for="tel">Numara:</label>
-            <input type="text" class="form-control" id="tel" placeholder="Telefon numaranızı giriniz">
+            <div class="d-flex align-items-center">
+              <span>+90   </span>
+            <input type="tel" class="form-control" id="tel" maxLength="10" placeholder="5XX XXX XXXX" oninput="justNumber(this)">
+            </div>
+            
 
           </div>
 
           <!-- Modal footer -->
-          <div class="modal-footer" id="modal-footer">
-            <button type="button" class="btn btn-success btn-block">Close</button>
+          <div class="modal-footer d-flex justify-content-center" id="modal-footer">
+            
           </div>
 
         </div>
@@ -178,6 +182,13 @@
   </header>
   <script src="../server/js/createTable.js"></script>
   <script src="../server/js/DateProcess.js"></script>
+  <script>
+  function justNumber(input) {
+  input.value = input.value.replace(/[^0-9]/g, '').slice(0, 10);
+  }
+  </script>
+
 </body>
+
 
 </html>
