@@ -1,5 +1,5 @@
 <?php 
-require_once('../phpSetting/ayar.php');
+require_once 'C:\xampp\htdocs\brber-berber-site\server\phpSetting\ayar.php';
 
 
 function convertingToMonday($date){

@@ -1,7 +1,7 @@
 // Mevcut randevu kontrolu icin haftanin gunu olarak ve saat olarak yeni array kaydediyoruz
 function getDateInfo(res) {
   for(let index=0 ;index < res.length; index++){
-    var date = new Date(res[index]['date']);
+    var date = new Date(res[index]['date_date']);
     var day = date.getDay();
     var hour = (res[index]['date_second']%86400)/3600;
     res[index]['new_date'] = [day,hour]
@@ -45,7 +45,7 @@ function printTable(datas,place_id,database_date){
         rowHTML += `<td style="padding:1px;"><div style="padding:3px" class="text-center"><button type="button" class="btn btn-warning btn-block disabled">${String(i)}:00-${String(i+1)}:00</button></div></td>`;
       }
       else{
-        rowHTML += `<td style="padding:1px;"><div style="padding:3px" class="text-center"><button type="button" class="btn btn-success btn-block" value="${j} ${i} ${place_id}" data-toggle="modal" data-target="#myModal" onclick=getValues(this)>${String(i)}:00-${String(i+1)}:00</button></div></td>`;
+        rowHTML += `<td style="padding:1px;"><div style="padding:3px" class="text-center"><button type="button" class="btn btn-success btn-block" value="${j} ${i} ${place_id}" id="${j}${i}${place_id}" data-toggle="modal" data-target="#myModal" onclick=getValues(this)>${String(i)}:00-${String(i+1)}:00</button></div></td>`;
       }
     }
     

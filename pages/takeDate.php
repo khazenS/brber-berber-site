@@ -97,7 +97,7 @@
           <!-- Modal Header -->
           <div class="modal-header">
             <h2>Sıranı Al!</h2>
-            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <button type="button" class="close" id="modal-close-button" data-dismiss="modal">&times;</button>
           </div>
 
           <!-- Modal body -->
