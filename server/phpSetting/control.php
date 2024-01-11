@@ -144,7 +144,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
   }
 
   if($_POST['request'] == 'deletePlace'){
-    $sorgu = sql("DELETE FROM cities WHERE id = '{$_POST['id']}'");
+    $sorgu = sql("DELETE FROM cities WHERE name = '{$_POST['name']}' AND address = '{$_POST['address']}'");
     if($sorgu){
       $response = [
       'status' => true,

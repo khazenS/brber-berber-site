@@ -173,11 +173,12 @@ async function deleteRow(clickedButton) {
 
 //Dukkan Silme
 async function deletePlace(clickedButton) {
-  let id = clickedButton.value;
+  let name = clickedButton.closest("tr").children[0].textContent
+  let address = clickedButton.closest("tr").children[1].textContent
   $.ajax({
     type: "POST",
     url: "../server/phpSetting/control.php",
-    data: { request: "deletePlace", id: id },
+    data: { request: "deletePlace", name: name , address , address },
     success: function (res) {
       if (res.status) {
         printAlert(res.message, "success");
