@@ -4,7 +4,9 @@
   background-position: center;
   height: 100vh;
 }
-
+body {
+  scroll-behavior: smooth !important;
+}
 /* BODY CSS*/
 
 /* Hakkımda bölümü*/
