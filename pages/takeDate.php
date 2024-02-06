@@ -118,7 +118,7 @@
 
     <!--FOOTER-->
     <div class="container-fluid d-flex text-white" id="footer">
-      <div class="container d-flex mt-3" ><img src="./helper/img/logo.png" style="margin: auto;"></div>
+      <div class="container d-flex mt-3" ><img src="../helper/img/logo.png" style="margin: auto;"></div>
       <div class="container d-flex align-items-center mt-2 mb-2" id="footerSection1">
         <p style="margin: 0; font-weight: 500;">Çalışma Günlerimiz <span style="color: red;">Pazartesi - Cumartesi</span></p> 
         <a class=" nav-link callLink" style="margin-left: auto;" href="tel:+905301861194"><i class="fa fa-mobile me-2" ></i>Ara 5301861194</a>
