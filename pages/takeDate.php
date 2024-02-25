@@ -1,3 +1,7 @@
+<?php
+require('../server/phpSetting/ayar.php');
+require("../server/php/getPlaces.php");
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -34,37 +38,39 @@
   <header class="container-fluid bg-dark">
     <!--İlk Navbar-->
     <nav class=" navbar d-none d-sm-flex container justify-content-start bg-white" id="firstNavbar">
-        <i class="fa-solid fa-phone"><a class="link" href="tel:+905301861194"> (+90) 530 186 1194</a></i>
-        <span class="ms-4 fw-bold ">Çalışma Saatlerimiz: 10:00 - 20:00</span>
-        <ul class="navbar-nav ms-auto flex-row">
-          <li class="nav-item me-3">
-            <a class="nav-link" href="https://www.instagram.com/cihatt.abayli/"><i class="social-link fa-brands fa-instagram fa-lg" style="color: #ac1ba7;"></i></a>
-          </li >
-          <li class="nav-item" style="margin-right: 30px;">
-            <a class="nav-link " href="https://wa.me/+905301861194"><i class="social-link fa-brands fa-whatsapp fa-lg" style="color: #20d924;"></i></a>
-          </li>
-        </ul>
+      <i class="fa-solid fa-phone"><a class="link" href="tel:+905301861194"> (+90) 530 186 1194</a></i>
+      <span class="ms-4 fw-bold ">Çalışma Saatlerimiz: 10:00 - 20:00</span>
+      <ul class="navbar-nav ms-auto flex-row">
+        <li class="nav-item me-3">
+          <a class="nav-link" href="https://www.instagram.com/cihatt.abayli/"><i
+              class="social-link fa-brands fa-instagram fa-lg" style="color: #ac1ba7;"></i></a>
+        </li>
+        <li class="nav-item" style="margin-right: 30px;">
+          <a class="nav-link " href="https://wa.me/+905301861194"><i class="social-link fa-brands fa-whatsapp fa-lg"
+              style="color: #20d924;"></i></a>
+        </li>
+      </ul>
     </nav>
     <!--İkinci Navbar-->
     <nav class="navbar dflex" id="secondNavbar">
       <div class="container">
         <a href="#" class="navbar-brand logo">BRBER</a>
-        
+
         <ul class="navbar-nav  flex-row customUl">
           <li class="nav-item me-3 ">
             <a href="../index.html#about" class="nav-link">Hakkımızda</a>
           </li>
           <li class="nav-item me-3 ">
-            <a href="../index.html#service" class="nav-link" >Hizmetlerimiz</a>
+            <a href="../index.html#service" class="nav-link">Hizmetlerimiz</a>
           </li>
           <li class="nav-item me-3 ">
-            <a href="../index.html#footer" class="nav-link" >İletişim</a>
+            <a href="../index.html#footer" class="nav-link">İletişim</a>
           </li>
         </ul>
-        
+
         <a href="takeDate.php" class="btn btn-warning customButton">Sıra Al!</a>
       </div>
-      
+
     </nav>
 
     <!--BODY-->
@@ -77,7 +83,7 @@
     <div id="body_div" class="container-fluid text-white">
       <div class="card-group">
         <?php
-        require_once("../server/php/getPlaces.php");
+        getPlaces();
         ?>
       </div>
     </div>
@@ -100,16 +106,17 @@
 
             <label for="tel">Numara:</label>
             <div class="d-flex align-items-center">
-              <span>+90   </span>
-            <input type="tel" class="form-control" id="tel" maxLength="10" placeholder="5XX XXX XXXX" oninput="justNumber(this)">
+              <span>+90 </span>
+              <input type="tel" class="form-control" id="tel" maxLength="10" placeholder="5XX XXX XXXX"
+                oninput="justNumber(this)">
             </div>
-            
+
 
           </div>
 
           <!-- Modal footer -->
           <div class="modal-footer d-flex justify-content-center" id="modal-footer">
-            
+
           </div>
 
         </div>
@@ -118,10 +125,12 @@
 
     <!--FOOTER-->
     <div class="container-fluid d-flex text-white" id="footer">
-      <div class="container d-flex mt-3" ><img src="../helper/img/logo.png" style="margin: auto;"></div>
+      <div class="container d-flex mt-3"><img src="../helper/img/logo.png" style="margin: auto;"></div>
       <div class="container d-flex align-items-center mt-2 mb-2" id="footerSection1">
-        <p style="margin: 0; font-weight: 500;">Çalışma Günlerimiz <span style="color: red;">Pazartesi - Cumartesi</span></p> 
-        <a class=" nav-link callLink" style="margin-left: auto;" href="tel:+905301861194"><i class="fa fa-mobile me-2" ></i>Ara 5301861194</a>
+        <p style="margin: 0; font-weight: 500;">Çalışma Günlerimiz <span style="color: red;">Pazartesi -
+            Cumartesi</span></p>
+        <a class=" nav-link callLink" style="margin-left: auto;" href="tel:+905301861194"><i
+            class="fa fa-mobile me-2"></i>Ara 5301861194</a>
       </div>
 
 
@@ -129,10 +138,14 @@
         <div class="col footerCol">
           <h2 class="justify-content-center d-flex">Hızlı Linkler</h2>
           <ul class="list-group footerLinksUL">
-            <li class="list-group-item mt-1 "><a class=" d-flex justify-content-center" href="../index.html#firstNavbar">Ana Sayfa</a></li>
-            <li class="list-group-item mt-1 "><a class=" d-flex justify-content-center" href="../index.html#about">Hakkımızda</a></li>
-            <li class="list-group-item mt-1 "><a class=" d-flex justify-content-center" href="takeDate.php">Sıra Al</a></li>
-            <li class="list-group-item mt-1"><a class=" d-flex justify-content-center" href="../index.html#service">Hizmetlerimiz</a></li>
+            <li class="list-group-item mt-1 "><a class=" d-flex justify-content-center"
+                href="../index.html#firstNavbar">Ana Sayfa</a></li>
+            <li class="list-group-item mt-1 "><a class=" d-flex justify-content-center"
+                href="../index.html#about">Hakkımızda</a></li>
+            <li class="list-group-item mt-1 "><a class=" d-flex justify-content-center" href="takeDate.php">Sıra Al</a>
+            </li>
+            <li class="list-group-item mt-1"><a class=" d-flex justify-content-center"
+                href="../index.html#service">Hizmetlerimiz</a></li>
           </ul>
         </div>
 
@@ -142,9 +155,13 @@
         <div class="col footerCol">
           <h2 class="justify-content-center d-flex">Bize Ulaşın</h2>
           <ul class="mt-5">
-            <li class="mt-3" style="margin-left: 2rem; list-style: none;"><i class="fa fa-map-marker me-1"></i>Brber Hair Osmangazi/BURSA</li>
-            <li class="mt-3" style="margin-left: 2rem; list-style: none;"><i class="fa-regular fa-envelope me-1"></i><a style="color:white;text-decoration: none;" href="mailto:cihatabayli@gmail.com">cihatabayli@gmail.com</a></li>
-            <li class="mt-3" style="margin-left: 2rem; list-style: none;"><i class="fa-brands fa-whatsapp me-1 "></i><a style="color:white;text-decoration: none;" href="https://wa.me/5301861194">Whatsapp'dan ulaş!</a></li>
+            <li class="mt-3" style="margin-left: 2rem; list-style: none;"><i class="fa fa-map-marker me-1"></i>Brber
+              Hair Osmangazi/BURSA</li>
+            <li class="mt-3" style="margin-left: 2rem; list-style: none;"><i class="fa-regular fa-envelope me-1"></i><a
+                style="color:white;text-decoration: none;" href="mailto:cihatabayli@gmail.com">cihatabayli@gmail.com</a>
+            </li>
+            <li class="mt-3" style="margin-left: 2rem; list-style: none;"><i class="fa-brands fa-whatsapp me-1 "></i><a
+                style="color:white;text-decoration: none;" href="https://wa.me/5301861194">Whatsapp'dan ulaş!</a></li>
           </ul>
         </div>
 
@@ -153,9 +170,15 @@
         <div class="col footerCol">
           <h2 class="justify-content-center d-flex">Takipte Kalın</h2>
           <ul class="mt-5">
-            <li class="mt-3" id="bölüm3li1" style="margin-left: 2rem; list-style: none;"><i class="fa-brands fa-instagram me-1"></i><a style="color:white;text-decoration: none;" href="https://www.instagram.com/brber_hair_saloon/">@brber_hair_saloon</a></li>
-            <li class="mt-3" id="bölüm3li2" style="margin-left: 2rem; list-style: none;"><i class="fa-brands fa-square-x-twitter me-1"></i><a style="color:white;text-decoration: none;" href="https://twitter.com/brber_saloon">@brber_saloon</a></li>
-            <li class="mt-3" id="bölüm3li3" style="margin-left: 2rem; list-style: none;"><i class="fa-brands fa-youtube me-1 "></i><a style="color:white;text-decoration: none;" href="https://www.youtube.com/channel/brber_hair_lessons">brber_hair_lessons</a></li>
+            <li class="mt-3" id="bölüm3li1" style="margin-left: 2rem; list-style: none;"><i
+                class="fa-brands fa-instagram me-1"></i><a style="color:white;text-decoration: none;"
+                href="https://www.instagram.com/brber_hair_saloon/">@brber_hair_saloon</a></li>
+            <li class="mt-3" id="bölüm3li2" style="margin-left: 2rem; list-style: none;"><i
+                class="fa-brands fa-square-x-twitter me-1"></i><a style="color:white;text-decoration: none;"
+                href="https://twitter.com/brber_saloon">@brber_saloon</a></li>
+            <li class="mt-3" id="bölüm3li3" style="margin-left: 2rem; list-style: none;"><i
+                class="fa-brands fa-youtube me-1 "></i><a style="color:white;text-decoration: none;"
+                href="https://www.youtube.com/channel/brber_hair_lessons">brber_hair_lessons</a></li>
           </ul>
         </div>
       </div>
@@ -164,9 +187,9 @@
   <script src="../server/js/createTable.js"></script>
   <script src="../server/js/DateProcess.js"></script>
   <script>
-  function justNumber(input) {
-  input.value = input.value.replace(/[^0-9]/g, '').slice(0, 10);
-  }
+    function justNumber(input) {
+      input.value = input.value.replace(/[^0-9]/g, '').slice(0, 10);
+    }
   </script>
 
 </body>

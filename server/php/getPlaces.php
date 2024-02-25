@@ -1,6 +1,4 @@
 <?php
-require_once('../server/phpSetting/ayar.php');
-
 function getPlaces()
 {
   $sorgu = sql("SELECT * FROM cities");
@@ -17,7 +15,6 @@ function getPlaces()
     ';
   }
 }
-getPlaces();
 
 
 ?>

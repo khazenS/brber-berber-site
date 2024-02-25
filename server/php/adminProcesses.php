@@ -1,6 +1,6 @@
 <?php
-require_once("../server/phpSetting/ayar.php");
-require_once('timeProcess.php');
+require_once("../phpSetting/ayar.php");
+require('timeProcess.php');
 function getNumberofPeople()
 {
   $sorgu = sql("SELECT * FROM users");
@@ -32,7 +32,7 @@ function printAllDates()
         <td>' . $rowUser->name_user . '</td>
         <td>+90 ' . $rowUser->phone_number . '</td>
         <td>' . getDayNameofWeek($rowBooking->date_date) . '/' . $rowBooking->date_date . '</td>
-        <td data-value="'.$rowBooking->date_second.'/'.$rowBooking->shop_id.'">' . getHoursAcctoSecond($rowBooking->date_second) . '</td>
+        <td data-value="' . $rowBooking->date_second . '/' . $rowBooking->shop_id . '">' . getHoursAcctoSecond($rowBooking->date_second) . '</td>
         <td class="d-flex"><button class="btn btn-warning flex-fill mr-2 " onclick="editButton(this)">Duzenle</button>
         <button class="btn btn-danger flex-fill" onclick="deleteRow(this)">Sil</button>
         </td>
@@ -50,9 +50,9 @@ function printAllPlaces()
   while ($row = $sorgu->fetch_object()) {
     echo '<tr>
         <td>' . $row->name . '</td>
-        <td>' .$row->address. '</td>
+        <td>' . $row->address . '</td>
         <td class="d-flex">
-        <button class="btn btn-danger flex-fill" onclick="deletePlace(this)" value="'.$row->id.'">Sil</button>
+        <button class="btn btn-danger flex-fill" onclick="deletePlace(this)" value="' . $row->id . '">Sil</button>
         </td>
       </tr>';
   }
