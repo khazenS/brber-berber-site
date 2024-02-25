@@ -1,3 +1,12 @@
+<h1>How to setup</h1>
+<ul>
+  <li>First, download the repo as a zip and open it</li>
+  <li>Secondly, we need xampp download it and carry in this repo to xampp/htdocs folder</li>
+  <li>Then, run the xampp and start the Apache and MySql section.</li>
+  <li>Click the admin button that is on Mysql line on xampp.</li>
+  <li>From opening screen click add button and enter name as brber-site and then import the brber-site.sql file then you got database datas.</li>
+  <li>Finally, enter http://localhost/brber-berber-site/index.html path and start to use it!</li>
+</ul>
 <h1>About this site</h1>
 <p>- This is an barber site that is including its own weekly queue system based on php backend.</p>
 <p>- It has own special admin page. </p>
@@ -34,7 +43,23 @@ the red box is taken from another person and the yellow box is time over state s
 After Saturday 20:01, the table will render new weekly schedule.</p>
 </br>
 </br>
-<h4 align="center">The admin entry page</h6>
+<h4 align="center">The admin entry page</h4>
 
 ![image](https://github.com/khazenS/brber-berber-site/assets/95938485/868cbadf-233d-4f69-b835-68a35a739e27)
 
+<p>You can reach this page from <a href="http://localhost/brber-berber-site/pages/adminEntryPage.php">adminEntryPage</a> and username is 'admin' & password is 'admin' as a default.</p>
+<p>If you try enter the admin page when you dont login on entry page. You will go to the main page so dont try that. </p>
+
+<h4 align="center">The admin page</h4>
+
+![image](https://github.com/khazenS/brber-berber-site/assets/95938485/1a11b1b3-e954-4bba-8ece-9d3b4ac9b2ea)
+![image](https://github.com/khazenS/brber-berber-site/assets/95938485/6c037c82-6e4f-4dfa-b61e-ccfaf26b51db)
+
+<p>You can see how many are people registered to your system and how many people took queue this week.</p>
+<p>You can edit and delete a queue from here but you have just edited the hour of queue not day so if you want to edit the day of queue,you need to delete it and take a place again. </p>
+<p>Also you see your places here and delete them.Under of it, you can add a new place to you.</p>
+
+<h6>How to edit a queue?</h6>
+
+![image](https://github.com/khazenS/brber-berber-site/assets/95938485/66b805f0-2737-46cb-a0ca-def42f9517e5)
+<p>When you click the 'Duzenle' button you will see like that and he grey button that is you have been hour of queue then you can chooce whatever you want to change hour to.</p>
