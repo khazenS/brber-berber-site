@@ -55,7 +55,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
   //Admin login islemleri
   if ($_POST['request'] == 'login') {
-    $adminLogin = login($_POST['username'], $_POST['username']);
+    $adminLogin = login($_POST['username'], $_POST['password']);
     if ($adminLogin) {
       $_SESSION['login'] = true;
       $response = [
