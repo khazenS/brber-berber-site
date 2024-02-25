@@ -1,6 +1,4 @@
 <?php
-require_once("../phpSetting/ayar.php");
-require('timeProcess.php');
 function getNumberofPeople()
 {
   $sorgu = sql("SELECT * FROM users");

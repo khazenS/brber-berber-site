@@ -1,5 +1,9 @@
 <?php
+require("../server/phpSetting/ayar.php");
+require("../server/php/timeProcess.php");
 require("../server/php/adminProcesses.php");
+?>
+<?php
 // Kullanıcı giriş yapmış
 if (isset($_SESSION['login']) && $_SESSION['login'] === true) {
   ?>
